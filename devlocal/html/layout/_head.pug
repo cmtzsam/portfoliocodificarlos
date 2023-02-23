@@ -1,0 +1,26 @@
+//- - current_profile = CONST_DEV_PROFILE
+- current_profile = "dev"
+
+head
+	meta(charset="UTF-8")
+	//- meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	title Codificarlos
+
+	//-ESTILOS LIBRERIAS
+	- var libsCss = page.libsCss
+	- var libs_css = {}
+
+	- libs_css['dev'] = []
+
+	if(libsCss)
+		-for(var lib in libsCss)
+			-libs_css['dev'].push('vendor/'+libsCss[lib]+'.css')
+
+	if(libsCss)
+		- var total_prints = libs_css[current_profile].length
+		- for(var i = 0; i < total_prints; i++)
+			link(rel='stylesheet' type='text/css' href='../'+libs_css[current_profile][i])
+
+	//- Global styles
+	link(rel="stylesheet", href="../styles/mainstyle.css", type="text/css")

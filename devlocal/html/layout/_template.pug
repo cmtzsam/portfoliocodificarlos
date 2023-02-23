@@ -1,0 +1,24 @@
+block configuracion
+	-var page = {}
+	-page['lang']		= 'es'
+	-page['libsCss']	= [ ]
+
+doctype html
+html(lang=page.lang)
+	//- Import head
+	include _head
+	body
+
+		//- Start page
+		main
+			//- Header global
+			//- include _header
+
+			//- Main content
+			block contenido
+
+			//- Footer global
+			//- include _footer
+
+		//- Scripts block
+		include _scripts

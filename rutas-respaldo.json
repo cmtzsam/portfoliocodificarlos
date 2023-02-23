@@ -1,0 +1,68 @@
+{
+	"directorios": {
+		"pug": {
+			"fuente": [
+				"html/**/*.pug",
+				"!html/layout/*.pug",
+				"!html/components/*.pug"
+			],
+			"destino": {
+				"dev": "dist/dev/html",
+				"prod": "dist/prod/html"
+			},
+			"watcher": "html/**/*.pug",
+			"recargar": {
+				"dev": "dist/dev/**.html",
+				"prod": "dist/prod/**.html"
+			}
+		},
+		"sass": {
+			"fuente": [
+				"sass/**/*.sass"
+			],
+			"destino": {
+				"dev": "dist/dev/css",
+				"prod": "dist/prod/css"
+			},
+			"watcher": "sass/**/*.sass"
+		},
+		"js": {
+			"babelPlugins": [
+				"transform-es2015-arrow-functions",
+				"transform-es2015-block-scoping",
+				"transform-es2015-classes",
+				"transform-es2015-template-literals",
+				"transform-es2015-object-super"
+			],
+			"destino": {
+				"dev": "dist/dev/js",
+				"prod": "dist/prod/js"
+			},
+			"recargar": {
+				"dev": "dist/dev/js/**.js",
+				"prod": "dist/prod/js/**.js"
+			}
+		},
+		"imagenes": {
+			"fuente": "images/**/*.*",
+			"destino": {
+				"dev": "dist/dev/images",
+				"prod": "dist/prod/images"
+			}
+		},
+		"fonts": {
+			"fuente": "fonts/**/*.*",
+			"destino": {
+				"dev": "dist/dev/fonts",
+				"prod": "dist/prod/fonts"
+			}
+		},
+		"vendor": {
+			"fuente": "vendor/**/*.*",
+			"destino": {
+				"dev": "dist/dev/vendor",
+				"prod": "dist/prod/vendor"
+			}
+		}
+	}
+}

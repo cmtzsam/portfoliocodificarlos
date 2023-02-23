@@ -1,0 +1,33 @@
+{
+  "name": "portfoliocodificarlos",
+  "version": "0.0.0",
+  "description": "Codificarlos S.A. de C.V.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmtzsam/portfoliocodificarlos.git"
+  },
+  "author": "CM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmtzsam/portfoliocodificarlos/issues"
+  },
+  "homepage": "https://github.com/cmtzsam/portfoliocodificarlos#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.12",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}
